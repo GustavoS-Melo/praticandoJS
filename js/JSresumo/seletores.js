@@ -1,0 +1,5 @@
+document.querySelector(".link").style.fontSize="50pt"
+        document.getElementById("titulo").style.fontSize="40pt"
+        document.getElementById("paragrafo").style.color="red"
+        document.getElementsByName("meu_link")[0].style.backgroundColor="blue"
+        document.getElementsByClassName("link").style.color="pink"
