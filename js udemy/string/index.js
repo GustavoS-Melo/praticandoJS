@@ -1,0 +1,1 @@
+let caracter = 'um \'texto\'' //caracter de escape
