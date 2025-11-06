@@ -1,0 +1,19 @@
+let jogador = {
+    nome: 'Renato',
+    idade: 34,
+    numGol: 81,
+    Gol(g=0){
+        console.log('renato fez gol')
+        this.numGol += g
+    }
+}
+// console.log(jogador.nome)
+// console.log(jogador.numGol)
+// jogador.Gol()
+// console.log(jogador.numGol)
+
+jogador.posicao = 'meio-campo'
+console.log(jogador)
+
+delete jogador.idade
+console.log(jogador)
