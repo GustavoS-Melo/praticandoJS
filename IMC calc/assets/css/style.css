@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+h2{
+  text-align: center;
+  color: #fff;
+}
+
+.tbl ul{
+  max-width: 640px;
+  margin: 50px auto;
+}
+
+.tabela-imc {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.tabela-imc .imc-abaixo{ 
+  background: #2e86de; 
+} 
+.tabela-imc .imc-normal{
+  background: #27ae60; 
+}
+.tabela-imc .imc-sobrepeso{
+  background: #f1c40f; color: #000; 
+}
+.tabela-imc .imc-obesidade1{
+  background: #e67e22; 
+}
+.tabela-imc .imc-obesidade2{
+  background: #d35400; 
+}
+.tabela-imc .imc-obesidade3{
+  background: #c0392b; 
+}
+
+.tabela-imc li {
+  background: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  font-size: 0.9em;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form input, form label, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+
+/* Fundo do resultado */
+#resultado p {
+  padding: 15px;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Cores por nível de IMC */
+.imc-abaixo{ 
+  background: #2e86de; 
+}   
+.imc-normal     { 
+  background: #27ae60; 
+}   
+.imc-sobrepeso  { 
+  background: #f1c40f; color: #000; 
+} 
+.imc-obesidade1 { 
+  background: #e67e22; 
+}   
+.imc-obesidade2 { 
+  background: #d35400; 
+}   
+.imc-obesidade3 { 
+  background: #c0392b; 
+}   
+
+
+
+/*MEDIA QUERY */
+
+
+/*CELULAR — até 480px */
+@media (max-width: 480px) {
+
+  body {
+    font-size: 1.1em; 
+    padding: 10px;
+  }
+
+  .container {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+
+  form input {
+    font-size: 20px;
+    height: 45px;
+    padding: 0 15px;
+  }
+
+  form button {
+    font-size: 16px;
+    height: 45px;
+  }
+}
+
+/* entre 481px e 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+
+  .container {
+    max-width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+  }
+
+  form input {
+    font-size: 22px;
+    height: 48px;
+  }
+
+  form button {
+    font-size: 17px;
+    height: 48px;
+  }
+}
+
+/* acima de 1024px */
+@media (min-width: 1024px) {
+
+  .container {
+    max-width: 700px; 
+  }
+
+  form input {
+    font-size: 26px;
+  }
+
+  form button {
+    font-size: 19px;
+  }
+}
